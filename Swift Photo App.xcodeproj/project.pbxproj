@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D2FD8781E4E3F4500547046 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2FD8771E4E3F4500547046 /* AppDelegate.swift */; };
+		9D2FD87A1E4E3F4500547046 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2FD8791E4E3F4500547046 /* ViewController.swift */; };
+		9D2FD87D1E4E3F4500547046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2FD87B1E4E3F4500547046 /* Main.storyboard */; };
+		9D2FD87F1E4E3F4500547046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D2FD87E1E4E3F4500547046 /* Assets.xcassets */; };
+		9D2FD8821E4E3F4500547046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2FD8801E4E3F4500547046 /* LaunchScreen.storyboard */; };
+		9D2FD88D1E4E3F4500547046 /* Swift_Photo_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2FD88C1E4E3F4500547046 /* Swift_Photo_AppTests.swift */; };
+		9D2FD8981E4E3F4500547046 /* Swift_Photo_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2FD8971E4E3F4500547046 /* Swift_Photo_AppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D2FD8891E4E3F4500547046 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D2FD86C1E4E3F4500547046 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D2FD8731E4E3F4500547046;
+			remoteInfo = "Swift Photo App";
+		};
+		9D2FD8941E4E3F4500547046 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D2FD86C1E4E3F4500547046 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D2FD8731E4E3F4500547046;
+			remoteInfo = "Swift Photo App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9D2FD8741E4E3F4500547046 /* Swift Photo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Photo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D2FD8771E4E3F4500547046 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9D2FD8791E4E3F4500547046 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D2FD87C1E4E3F4500547046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9D2FD87E1E4E3F4500547046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9D2FD8811E4E3F4500547046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9D2FD8831E4E3F4500547046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D2FD8881E4E3F4500547046 /* Swift Photo AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift Photo AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D2FD88C1E4E3F4500547046 /* Swift_Photo_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Photo_AppTests.swift; sourceTree = "<group>"; };
+		9D2FD88E1E4E3F4500547046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D2FD8931E4E3F4500547046 /* Swift Photo AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift Photo AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D2FD8971E4E3F4500547046 /* Swift_Photo_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Photo_AppUITests.swift; sourceTree = "<group>"; };
+		9D2FD8991E4E3F4500547046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D2FD8711E4E3F4500547046 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D2FD8851E4E3F4500547046 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D2FD8901E4E3F4500547046 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D2FD86B1E4E3F4500547046 = {
+			isa = PBXGroup;
+			children = (
+				9D2FD8761E4E3F4500547046 /* Swift Photo App */,
+				9D2FD88B1E4E3F4500547046 /* Swift Photo AppTests */,
+				9D2FD8961E4E3F4500547046 /* Swift Photo AppUITests */,
+				9D2FD8751E4E3F4500547046 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D2FD8751E4E3F4500547046 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D2FD8741E4E3F4500547046 /* Swift Photo App.app */,
+				9D2FD8881E4E3F4500547046 /* Swift Photo AppTests.xctest */,
+				9D2FD8931E4E3F4500547046 /* Swift Photo AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D2FD8761E4E3F4500547046 /* Swift Photo App */ = {
+			isa = PBXGroup;
+			children = (
+				9D2FD8771E4E3F4500547046 /* AppDelegate.swift */,
+				9D2FD8791E4E3F4500547046 /* ViewController.swift */,
+				9D2FD87B1E4E3F4500547046 /* Main.storyboard */,
+				9D2FD87E1E4E3F4500547046 /* Assets.xcassets */,
+				9D2FD8801E4E3F4500547046 /* LaunchScreen.storyboard */,
+				9D2FD8831E4E3F4500547046 /* Info.plist */,
+			);
+			path = "Swift Photo App";
+			sourceTree = "<group>";
+		};
+		9D2FD88B1E4E3F4500547046 /* Swift Photo AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9D2FD88C1E4E3F4500547046 /* Swift_Photo_AppTests.swift */,
+				9D2FD88E1E4E3F4500547046 /* Info.plist */,
+			);
+			path = "Swift Photo AppTests";
+			sourceTree = "<group>";
+		};
+		9D2FD8961E4E3F4500547046 /* Swift Photo AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9D2FD8971E4E3F4500547046 /* Swift_Photo_AppUITests.swift */,
+				9D2FD8991E4E3F4500547046 /* Info.plist */,
+			);
+			path = "Swift Photo AppUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9D2FD8731E4E3F4500547046 /* Swift Photo App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D2FD89C1E4E3F4500547046 /* Build configuration list for PBXNativeTarget "Swift Photo App" */;
+			buildPhases = (
+				9D2FD8701E4E3F4500547046 /* Sources */,
+				9D2FD8711E4E3F4500547046 /* Frameworks */,
+				9D2FD8721E4E3F4500547046 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Swift Photo App";
+			productName = "Swift Photo App";
+			productReference = 9D2FD8741E4E3F4500547046 /* Swift Photo App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D2FD8871E4E3F4500547046 /* Swift Photo AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D2FD89F1E4E3F4500547046 /* Build configuration list for PBXNativeTarget "Swift Photo AppTests" */;
+			buildPhases = (
+				9D2FD8841E4E3F4500547046 /* Sources */,
+				9D2FD8851E4E3F4500547046 /* Frameworks */,
+				9D2FD8861E4E3F4500547046 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D2FD88A1E4E3F4500547046 /* PBXTargetDependency */,
+			);
+			name = "Swift Photo AppTests";
+			productName = "Swift Photo AppTests";
+			productReference = 9D2FD8881E4E3F4500547046 /* Swift Photo AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9D2FD8921E4E3F4500547046 /* Swift Photo AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D2FD8A21E4E3F4500547046 /* Build configuration list for PBXNativeTarget "Swift Photo AppUITests" */;
+			buildPhases = (
+				9D2FD88F1E4E3F4500547046 /* Sources */,
+				9D2FD8901E4E3F4500547046 /* Frameworks */,
+				9D2FD8911E4E3F4500547046 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D2FD8951E4E3F4500547046 /* PBXTargetDependency */,
+			);
+			name = "Swift Photo AppUITests";
+			productName = "Swift Photo AppUITests";
+			productReference = 9D2FD8931E4E3F4500547046 /* Swift Photo AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D2FD86C1E4E3F4500547046 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Admios;
+				TargetAttributes = {
+					9D2FD8731E4E3F4500547046 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4BTTH8XXKF;
+						ProvisioningStyle = Automatic;
+					};
+					9D2FD8871E4E3F4500547046 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4BTTH8XXKF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9D2FD8731E4E3F4500547046;
+					};
+					9D2FD8921E4E3F4500547046 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4BTTH8XXKF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9D2FD8731E4E3F4500547046;
+					};
+				};
+			};
+			buildConfigurationList = 9D2FD86F1E4E3F4500547046 /* Build configuration list for PBXProject "Swift Photo App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9D2FD86B1E4E3F4500547046;
+			productRefGroup = 9D2FD8751E4E3F4500547046 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D2FD8731E4E3F4500547046 /* Swift Photo App */,
+				9D2FD8871E4E3F4500547046 /* Swift Photo AppTests */,
+				9D2FD8921E4E3F4500547046 /* Swift Photo AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D2FD8721E4E3F4500547046 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D2FD8821E4E3F4500547046 /* LaunchScreen.storyboard in Resources */,
+				9D2FD87F1E4E3F4500547046 /* Assets.xcassets in Resources */,
+				9D2FD87D1E4E3F4500547046 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D2FD8861E4E3F4500547046 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D2FD8911E4E3F4500547046 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D2FD8701E4E3F4500547046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D2FD87A1E4E3F4500547046 /* ViewController.swift in Sources */,
+				9D2FD8781E4E3F4500547046 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D2FD8841E4E3F4500547046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D2FD88D1E4E3F4500547046 /* Swift_Photo_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D2FD88F1E4E3F4500547046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D2FD8981E4E3F4500547046 /* Swift_Photo_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D2FD88A1E4E3F4500547046 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D2FD8731E4E3F4500547046 /* Swift Photo App */;
+			targetProxy = 9D2FD8891E4E3F4500547046 /* PBXContainerItemProxy */;
+		};
+		9D2FD8951E4E3F4500547046 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D2FD8731E4E3F4500547046 /* Swift Photo App */;
+			targetProxy = 9D2FD8941E4E3F4500547046 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9D2FD87B1E4E3F4500547046 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D2FD87C1E4E3F4500547046 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9D2FD8801E4E3F4500547046 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D2FD8811E4E3F4500547046 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D2FD89A1E4E3F4500547046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D2FD89B1E4E3F4500547046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9D2FD89D1E4E3F4500547046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4BTTH8XXKF;
+				INFOPLIST_FILE = "Swift Photo App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.admios-sa.Swift-Photo-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9D2FD89E1E4E3F4500547046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4BTTH8XXKF;
+				INFOPLIST_FILE = "Swift Photo App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.admios-sa.Swift-Photo-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		9D2FD8A01E4E3F4500547046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4BTTH8XXKF;
+				INFOPLIST_FILE = "Swift Photo AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.admios-sa.Swift-Photo-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Photo App.app/Swift Photo App";
+			};
+			name = Debug;
+		};
+		9D2FD8A11E4E3F4500547046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 4BTTH8XXKF;
+				INFOPLIST_FILE = "Swift Photo AppTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.admios-sa.Swift-Photo-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Photo App.app/Swift Photo App";
+			};
+			name = Release;
+		};
+		9D2FD8A31E4E3F4500547046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4BTTH8XXKF;
+				INFOPLIST_FILE = "Swift Photo AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.admios-sa.Swift-Photo-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Swift Photo App";
+			};
+			name = Debug;
+		};
+		9D2FD8A41E4E3F4500547046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 4BTTH8XXKF;
+				INFOPLIST_FILE = "Swift Photo AppUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.admios-sa.Swift-Photo-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Swift Photo App";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D2FD86F1E4E3F4500547046 /* Build configuration list for PBXProject "Swift Photo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D2FD89A1E4E3F4500547046 /* Debug */,
+				9D2FD89B1E4E3F4500547046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D2FD89C1E4E3F4500547046 /* Build configuration list for PBXNativeTarget "Swift Photo App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D2FD89D1E4E3F4500547046 /* Debug */,
+				9D2FD89E1E4E3F4500547046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9D2FD89F1E4E3F4500547046 /* Build configuration list for PBXNativeTarget "Swift Photo AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D2FD8A01E4E3F4500547046 /* Debug */,
+				9D2FD8A11E4E3F4500547046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9D2FD8A21E4E3F4500547046 /* Build configuration list for PBXNativeTarget "Swift Photo AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D2FD8A31E4E3F4500547046 /* Debug */,
+				9D2FD8A41E4E3F4500547046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D2FD86C1E4E3F4500547046 /* Project object */;
+}
