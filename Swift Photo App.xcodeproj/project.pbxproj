@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		1006BA8EF42F0EAAD7A25A04 /* Pods_Swift_Photo_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B18A04E65D0C8741CC47CB /* Pods_Swift_Photo_AppTests.framework */; };
-		9D2FD8781E4E3F4500547046 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2FD8771E4E3F4500547046 /* AppDelegate.swift */; };
+		9D0954001E52327E006A42FF /* FlickrKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0953F91E52327E006A42FF /* FlickrKit.framework */; };
+		9D0954011E52327E006A42FF /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0953FA1E52327E006A42FF /* MBProgressHUD.framework */; };
+		9D0954021E52327E006A42FF /* NYXImagesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0953FB1E52327E006A42FF /* NYXImagesKit.framework */; };
+		9D0954051E52327E006A42FF /* PREBorderView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0953FE1E52327E006A42FF /* PREBorderView.framework */; };
+		9D0954061E52327E006A42FF /* SwipeView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0953FF1E52327E006A42FF /* SwipeView.framework */; };
+		9D2785F31E51F02900FBB387 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2785F21E51F02900FBB387 /* UIImageView.swift */; };
 		9D2FD87A1E4E3F4500547046 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2FD8791E4E3F4500547046 /* ViewController.swift */; };
 		9D2FD87D1E4E3F4500547046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2FD87B1E4E3F4500547046 /* Main.storyboard */; };
 		9D2FD87F1E4E3F4500547046 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D2FD87E1E4E3F4500547046 /* Assets.xcassets */; };
 		9D2FD8821E4E3F4500547046 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D2FD8801E4E3F4500547046 /* LaunchScreen.storyboard */; };
 		9D2FD88D1E4E3F4500547046 /* Swift_Photo_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2FD88C1E4E3F4500547046 /* Swift_Photo_AppTests.swift */; };
 		9D2FD8981E4E3F4500547046 /* Swift_Photo_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2FD8971E4E3F4500547046 /* Swift_Photo_AppUITests.swift */; };
+		9D597C611E524BD60035488E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D597C601E524BD60035488E /* AppDelegate.swift */; };
 		B89297F348DB71F40CD0694B /* Pods_Swift_Photo_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD695F3B01588FE1CE6E2AF /* Pods_Swift_Photo_App.framework */; };
 		DD97CFB482F71C9D744FB0F0 /* Pods_Swift_Photo_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26FFB578A3F5FD0D8324CEC /* Pods_Swift_Photo_AppUITests.framework */; };
 /* End PBXBuildFile section */
@@ -44,8 +50,15 @@
 		79BDBE8CC0E5699445344429 /* Pods-Swift Photo AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift Photo AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift Photo AppTests/Pods-Swift Photo AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		8A14A27E70C6478984E6DD81 /* Pods-Swift Photo AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift Photo AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift Photo AppUITests/Pods-Swift Photo AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		91B18A04E65D0C8741CC47CB /* Pods_Swift_Photo_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_Photo_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D0953F91E52327E006A42FF /* FlickrKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FlickrKit.framework; path = "Pods/../build/Debug-iphoneos/FlickrKit/FlickrKit.framework"; sourceTree = "<group>"; };
+		9D0953FA1E52327E006A42FF /* MBProgressHUD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MBProgressHUD.framework; path = "Pods/../build/Debug-iphoneos/MBProgressHUD/MBProgressHUD.framework"; sourceTree = "<group>"; };
+		9D0953FB1E52327E006A42FF /* NYXImagesKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NYXImagesKit.framework; path = "Pods/../build/Debug-iphoneos/NYXImagesKit/NYXImagesKit.framework"; sourceTree = "<group>"; };
+		9D0953FC1E52327E006A42FF /* Pods_Swift_Photo_AppTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Swift_Photo_AppTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_Swift_Photo_AppTests.framework"; sourceTree = "<group>"; };
+		9D0953FD1E52327E006A42FF /* Pods_Swift_Photo_AppUITests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Swift_Photo_AppUITests.framework; path = "Pods/../build/Debug-iphoneos/Pods_Swift_Photo_AppUITests.framework"; sourceTree = "<group>"; };
+		9D0953FE1E52327E006A42FF /* PREBorderView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PREBorderView.framework; path = "Pods/../build/Debug-iphoneos/PREBorderView/PREBorderView.framework"; sourceTree = "<group>"; };
+		9D0953FF1E52327E006A42FF /* SwipeView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwipeView.framework; path = "Pods/../build/Debug-iphoneos/SwipeView/SwipeView.framework"; sourceTree = "<group>"; };
+		9D2785F21E51F02900FBB387 /* UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		9D2FD8741E4E3F4500547046 /* Swift Photo App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift Photo App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D2FD8771E4E3F4500547046 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D2FD8791E4E3F4500547046 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9D2FD87C1E4E3F4500547046 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D2FD87E1E4E3F4500547046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +70,8 @@
 		9D2FD8931E4E3F4500547046 /* Swift Photo AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift Photo AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D2FD8971E4E3F4500547046 /* Swift_Photo_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Photo_AppUITests.swift; sourceTree = "<group>"; };
 		9D2FD8991E4E3F4500547046 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D597C601E524BD60035488E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9DDB9F221E524C8800040581 /* Swift_Photo_App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift_Photo_App-Bridging-Header.h"; sourceTree = "<group>"; };
 		A26FFB578A3F5FD0D8324CEC /* Pods_Swift_Photo_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_Photo_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD695F3B01588FE1CE6E2AF /* Pods_Swift_Photo_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_Photo_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -66,6 +81,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D0954001E52327E006A42FF /* FlickrKit.framework in Frameworks */,
+				9D0954011E52327E006A42FF /* MBProgressHUD.framework in Frameworks */,
+				9D0954021E52327E006A42FF /* NYXImagesKit.framework in Frameworks */,
+				9D0954051E52327E006A42FF /* PREBorderView.framework in Frameworks */,
+				9D0954061E52327E006A42FF /* SwipeView.framework in Frameworks */,
 				B89297F348DB71F40CD0694B /* Pods_Swift_Photo_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +122,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		9D2785F11E51F01A00FBB387 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9D2785F21E51F02900FBB387 /* UIImageView.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		9D2FD86B1E4E3F4500547046 = {
 			isa = PBXGroup;
 			children = (
@@ -127,12 +155,14 @@
 		9D2FD8761E4E3F4500547046 /* Swift Photo App */ = {
 			isa = PBXGroup;
 			children = (
-				9D2FD8771E4E3F4500547046 /* AppDelegate.swift */,
+				9D2785F11E51F01A00FBB387 /* Extensions */,
+				9D597C601E524BD60035488E /* AppDelegate.swift */,
 				9D2FD8791E4E3F4500547046 /* ViewController.swift */,
 				9D2FD87B1E4E3F4500547046 /* Main.storyboard */,
 				9D2FD87E1E4E3F4500547046 /* Assets.xcassets */,
 				9D2FD8801E4E3F4500547046 /* LaunchScreen.storyboard */,
 				9D2FD8831E4E3F4500547046 /* Info.plist */,
+				9DDB9F221E524C8800040581 /* Swift_Photo_App-Bridging-Header.h */,
 			);
 			path = "Swift Photo App";
 			sourceTree = "<group>";
@@ -158,6 +188,13 @@
 		CEA0B6A2F9AA451B8D4463A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D0953F91E52327E006A42FF /* FlickrKit.framework */,
+				9D0953FA1E52327E006A42FF /* MBProgressHUD.framework */,
+				9D0953FB1E52327E006A42FF /* NYXImagesKit.framework */,
+				9D0953FC1E52327E006A42FF /* Pods_Swift_Photo_AppTests.framework */,
+				9D0953FD1E52327E006A42FF /* Pods_Swift_Photo_AppUITests.framework */,
+				9D0953FE1E52327E006A42FF /* PREBorderView.framework */,
+				9D0953FF1E52327E006A42FF /* SwipeView.framework */,
 				AAD695F3B01588FE1CE6E2AF /* Pods_Swift_Photo_App.framework */,
 				91B18A04E65D0C8741CC47CB /* Pods_Swift_Photo_AppTests.framework */,
 				A26FFB578A3F5FD0D8324CEC /* Pods_Swift_Photo_AppUITests.framework */,
@@ -449,8 +486,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D597C611E524BD60035488E /* AppDelegate.swift in Sources */,
 				9D2FD87A1E4E3F4500547046 /* ViewController.swift in Sources */,
-				9D2FD8781E4E3F4500547046 /* AppDelegate.swift in Sources */,
+				9D2785F31E51F02900FBB387 /* UIImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,11 +642,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4BTTH8XXKF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/FlickrKit",
+					"$(PROJECT_DIR)/Pods/MBProgressHUD",
+					"$(PROJECT_DIR)/Pods/NYXImagesKit",
+					"$(PROJECT_DIR)/Pods",
+					"$(PROJECT_DIR)/Pods/PREBorderView",
+					"$(PROJECT_DIR)/Pods/SwipeView",
+				);
 				INFOPLIST_FILE = "Swift Photo App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.admios-sa.Swift-Photo-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(inherited) $(PROJECT_DIR)/Pods $(PROJECT_DIR)/Pods/FlickerKit $(PROJECT_DIR)/Pods/PREBorderView $(PROJECT_DIR)/Pods/SwipeView $(PROJECT_DIR)/Pods/NYXImagesKit $(PROJECT_DIR)/Pods/MBProgressHUD";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PRODUCT_NAME)/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -619,11 +669,23 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 4BTTH8XXKF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/FlickrKit",
+					"$(PROJECT_DIR)/Pods/MBProgressHUD",
+					"$(PROJECT_DIR)/Pods/NYXImagesKit",
+					"$(PROJECT_DIR)/Pods",
+					"$(PROJECT_DIR)/Pods/PREBorderView",
+					"$(PROJECT_DIR)/Pods/SwipeView",
+				);
 				INFOPLIST_FILE = "Swift Photo App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.admios-sa.Swift-Photo-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(inherited) $(PROJECT_DIR)/Pods $(PROJECT_DIR)/Pods/FlickerKit $(PROJECT_DIR)/Pods/PREBorderView $(PROJECT_DIR)/Pods/SwipeView $(PROJECT_DIR)/Pods/NYXImagesKit $(PROJECT_DIR)/Pods/MBProgressHUD";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PRODUCT_NAME)/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -709,6 +771,7 @@
 				9D2FD89E1E4E3F4500547046 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D2FD89F1E4E3F4500547046 /* Build configuration list for PBXNativeTarget "Swift Photo AppTests" */ = {
 			isa = XCConfigurationList;
@@ -717,6 +780,7 @@
 				9D2FD8A11E4E3F4500547046 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D2FD8A21E4E3F4500547046 /* Build configuration list for PBXNativeTarget "Swift Photo AppUITests" */ = {
 			isa = XCConfigurationList;
@@ -725,6 +789,7 @@
 				9D2FD8A41E4E3F4500547046 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
