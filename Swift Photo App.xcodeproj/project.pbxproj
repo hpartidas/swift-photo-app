@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1006BA8EF42F0EAAD7A25A04 /* Pods_Swift_Photo_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B18A04E65D0C8741CC47CB /* Pods_Swift_Photo_AppTests.framework */; };
+		4CB526B0EE05049222AD346D /* Pods_Swift_Photo_App_Swift_Photo_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472396CA88FB7837BC136650 /* Pods_Swift_Photo_App_Swift_Photo_AppTests.framework */; };
 		9D0954001E52327E006A42FF /* FlickrKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0953F91E52327E006A42FF /* FlickrKit.framework */; };
 		9D0954011E52327E006A42FF /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0953FA1E52327E006A42FF /* MBProgressHUD.framework */; };
 		9D0954021E52327E006A42FF /* NYXImagesKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0953FB1E52327E006A42FF /* NYXImagesKit.framework */; };
@@ -45,7 +46,10 @@
 /* Begin PBXFileReference section */
 		0F2571F9AB4277EF7C54D163 /* Pods-Swift Photo AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift Photo AppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift Photo AppUITests/Pods-Swift Photo AppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1473165DA98C1EBD6CC3A35F /* Pods-Swift Photo App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift Photo App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift Photo App/Pods-Swift Photo App.debug.xcconfig"; sourceTree = "<group>"; };
+		306BBB74312B5E8910C8DA0E /* Pods-Swift Photo App-Swift Photo AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift Photo App-Swift Photo AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift Photo App-Swift Photo AppTests/Pods-Swift Photo App-Swift Photo AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		472396CA88FB7837BC136650 /* Pods_Swift_Photo_App_Swift_Photo_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_Photo_App_Swift_Photo_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F8BE47274A4DA93A97F03C /* Pods-Swift Photo App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift Photo App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift Photo App/Pods-Swift Photo App.release.xcconfig"; sourceTree = "<group>"; };
+		5C96866E63A5FBCFAAABE8E8 /* Pods-Swift Photo App-Swift Photo AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift Photo App-Swift Photo AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift Photo App-Swift Photo AppTests/Pods-Swift Photo App-Swift Photo AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		71384E660D9808DB3F6522D7 /* Pods-Swift Photo AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift Photo AppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift Photo AppTests/Pods-Swift Photo AppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		79BDBE8CC0E5699445344429 /* Pods-Swift Photo AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift Photo AppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift Photo AppTests/Pods-Swift Photo AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		8A14A27E70C6478984E6DD81 /* Pods-Swift Photo AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift Photo AppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift Photo AppUITests/Pods-Swift Photo AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1006BA8EF42F0EAAD7A25A04 /* Pods_Swift_Photo_AppTests.framework in Frameworks */,
+				4CB526B0EE05049222AD346D /* Pods_Swift_Photo_App_Swift_Photo_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +123,8 @@
 				79BDBE8CC0E5699445344429 /* Pods-Swift Photo AppTests.release.xcconfig */,
 				8A14A27E70C6478984E6DD81 /* Pods-Swift Photo AppUITests.debug.xcconfig */,
 				0F2571F9AB4277EF7C54D163 /* Pods-Swift Photo AppUITests.release.xcconfig */,
+				306BBB74312B5E8910C8DA0E /* Pods-Swift Photo App-Swift Photo AppTests.debug.xcconfig */,
+				5C96866E63A5FBCFAAABE8E8 /* Pods-Swift Photo App-Swift Photo AppTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -133,12 +140,12 @@
 		9D2FD86B1E4E3F4500547046 = {
 			isa = PBXGroup;
 			children = (
+				CEA0B6A2F9AA451B8D4463A2 /* Frameworks */,
+				3AFF00F1F3B9240B75CEAC00 /* Pods */,
+				9D2FD8751E4E3F4500547046 /* Products */,
 				9D2FD8761E4E3F4500547046 /* Swift Photo App */,
 				9D2FD88B1E4E3F4500547046 /* Swift Photo AppTests */,
 				9D2FD8961E4E3F4500547046 /* Swift Photo AppUITests */,
-				9D2FD8751E4E3F4500547046 /* Products */,
-				3AFF00F1F3B9240B75CEAC00 /* Pods */,
-				CEA0B6A2F9AA451B8D4463A2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -198,6 +205,7 @@
 				AAD695F3B01588FE1CE6E2AF /* Pods_Swift_Photo_App.framework */,
 				91B18A04E65D0C8741CC47CB /* Pods_Swift_Photo_AppTests.framework */,
 				A26FFB578A3F5FD0D8324CEC /* Pods_Swift_Photo_AppUITests.framework */,
+				472396CA88FB7837BC136650 /* Pods_Swift_Photo_App_Swift_Photo_AppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -292,7 +300,6 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4BTTH8XXKF;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 9D2FD8731E4E3F4500547046;
 					};
 				};
 			};
@@ -401,7 +408,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift Photo AppTests/Pods-Swift Photo AppTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift Photo App-Swift Photo AppTests/Pods-Swift Photo App-Swift Photo AppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		7967FDE49A1218D6AEAA6FF3 /* [CP] Embed Pods Frameworks */ = {
@@ -416,7 +423,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift Photo AppTests/Pods-Swift Photo AppTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swift Photo App-Swift Photo AppTests/Pods-Swift Photo App-Swift Photo AppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		914F99E1A93D2A1F313A035B /* [CP] Embed Pods Frameworks */ = {
@@ -692,15 +699,26 @@
 		};
 		9D2FD8A01E4E3F4500547046 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71384E660D9808DB3F6522D7 /* Pods-Swift Photo AppTests.debug.xcconfig */;
+			baseConfigurationReference = 306BBB74312B5E8910C8DA0E /* Pods-Swift Photo App-Swift Photo AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 4BTTH8XXKF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/Pods/FlickrKit\"",
+					"\"$(PROJECT_DIR)/Pods/MBProgressHUD\"",
+					"\"$(PROJECT_DIR)/Pods/NYXImagesKit\"",
+					"\"$(PROJECT_DIR)/Pods/PREBorderView\"",
+					"\"$(PROJECT_DIR)/Pods/SwipeView\"",
+				);
 				INFOPLIST_FILE = "Swift Photo AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.admios-sa.Swift-Photo-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(inherited) $(PROJECT_DIR)/Pods $(PROJECT_DIR)/Pods/FlickerKit $(PROJECT_DIR)/Pods/PREBorderView $(PROJECT_DIR)/Pods/SwipeView $(PROJECT_DIR)/Pods/NYXImagesKit $(PROJECT_DIR)/Pods/MBProgressHUD";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Swift Photo App/Swift_Photo_App-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Photo App.app/Swift Photo App";
 			};
@@ -708,15 +726,26 @@
 		};
 		9D2FD8A11E4E3F4500547046 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79BDBE8CC0E5699445344429 /* Pods-Swift Photo AppTests.release.xcconfig */;
+			baseConfigurationReference = 5C96866E63A5FBCFAAABE8E8 /* Pods-Swift Photo App-Swift Photo AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 4BTTH8XXKF;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/Pods/FlickrKit\"",
+					"\"$(PROJECT_DIR)/Pods/MBProgressHUD\"",
+					"\"$(PROJECT_DIR)/Pods/NYXImagesKit\"",
+					"\"$(PROJECT_DIR)/Pods/PREBorderView\"",
+					"\"$(PROJECT_DIR)/Pods/SwipeView\"",
+				);
 				INFOPLIST_FILE = "Swift Photo AppTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.admios-sa.Swift-Photo-AppTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(inherited) $(PROJECT_DIR)/Pods $(PROJECT_DIR)/Pods/FlickerKit $(PROJECT_DIR)/Pods/PREBorderView $(PROJECT_DIR)/Pods/SwipeView $(PROJECT_DIR)/Pods/NYXImagesKit $(PROJECT_DIR)/Pods/MBProgressHUD";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Swift Photo App/Swift_Photo_App-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swift Photo App.app/Swift Photo App";
 			};
@@ -732,8 +761,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.admios-sa.Swift-Photo-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "Swift Photo App";
 			};
 			name = Debug;
 		};
@@ -747,8 +776,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.admios-sa.Swift-Photo-AppUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
-				TEST_TARGET_NAME = "Swift Photo App";
 			};
 			name = Release;
 		};
