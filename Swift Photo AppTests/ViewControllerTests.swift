@@ -9,10 +9,7 @@
 import XCTest
 @testable import Swift_Photo_App
 
-class Swift_Photo_AppTests: XCTestCase {
-    
-    static let PHOTO_ACTION_PRESSED = "photoActionPressed:"
-    
+class ViewControllerTests: XCTestCase {
     // System Under Test
     var sut: ViewController!
     
@@ -85,60 +82,45 @@ class Swift_Photo_AppTests: XCTestCase {
     func testBtnResetShouldHaveRotateImageAssigned() {
         let currentImage = self.sut.btnReset.currentImage!
         
-        XCTAssertTrue(buttonShouldHaveImage(currentImage, "icon_rotate"))
+        XCTAssertTrue(buttonShouldHaveImage(currentImage, ViewControllerButtonOptions.resetImage))
     }
     
     func testBtnCropHasShouldHaveCropImageAssigned() {
         let currentImage = self.sut.btnCrop.currentImage!
         
-        XCTAssertTrue(buttonShouldHaveImage(currentImage, "icon_crop"))
+        XCTAssertTrue(buttonShouldHaveImage(currentImage, ViewControllerButtonOptions.cropImage))
     }
     
     func testBtnBlurShouldHaveBlurImageAssigned() {
         let currentImage = self.sut.btnBlur.currentImage!
         
-        XCTAssertTrue(buttonShouldHaveImage(currentImage, "icon_blur"))
+        XCTAssertTrue(buttonShouldHaveImage(currentImage, ViewControllerButtonOptions.blurImage))
     }
     
     func testBtnContrastShouldHaveContrastImageAssigned() {
         let currentImage = self.sut.btnContrast.currentImage!
         
-        XCTAssertTrue(buttonShouldHaveImage(currentImage, "icon_constrast"))
+        XCTAssertTrue(buttonShouldHaveImage(currentImage, ViewControllerButtonOptions.constrastImage))
     }
-
-    // Note: Couldn't find a way to test if the SystemItem is set accordingly
-    // Properly seems to be internal and does not have any public getters or setters.
-    
-//    func testBtnShareSystemItemShouldBeAction() {
-//        let currentButton = self.sut.btnShare!
-//        let shouldBeButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.action, target: currentButton.target, action:#selector(ViewController.shareButtonPressed(_:)))
-//        shouldBeButton.style = UIBarButtonItemStyle.plain
-//        
-//        print("============================== \(currentButton.) \(currentButton.action) \(currentButton.style) ==============================")
-//        
-//        print("============================== \(shouldBeButton.target) \(shouldBeButton.action) \(shouldBeButton.style) ==============================")
-//        
-//        XCTAssertTrue(currentButton.action == #selector(ViewController.shareButtonPressed(_:)))
-//    }
     
     func testBtnResetActionShouldBePhotoActionPressed() {
         let currentButton = self.sut.btnReset!
-        XCTAssertTrue(buttonShouldHaveAction(currentButton, type(of: self).PHOTO_ACTION_PRESSED, UIControlEvents.touchUpInside))
+        XCTAssertTrue(buttonShouldHaveAction(currentButton, ViewControllerButtonOptions.photoButtonAction, UIControlEvents.touchUpInside))
     }
     
     func testBtnCropActionShouldBePhotoActionPressed() {
         let currentButton = self.sut.btnCrop!
-        XCTAssertTrue(buttonShouldHaveAction(currentButton, type(of: self).PHOTO_ACTION_PRESSED, UIControlEvents.touchUpInside))
+        XCTAssertTrue(buttonShouldHaveAction(currentButton, ViewControllerButtonOptions.photoButtonAction, UIControlEvents.touchUpInside))
     }
     
     func testBtnBlurActionShouldBePhotoActionPressed() {
         let currentButton = self.sut.btnBlur!
-        XCTAssertTrue(buttonShouldHaveAction(currentButton, type(of: self).PHOTO_ACTION_PRESSED, UIControlEvents.touchUpInside))
+        XCTAssertTrue(buttonShouldHaveAction(currentButton, ViewControllerButtonOptions.photoButtonAction, UIControlEvents.touchUpInside))
     }
     
     func testBtnContrastActionShouldBePhotoActionPressed() {
         let currentButton = self.sut.btnContrast!
-        XCTAssertTrue(buttonShouldHaveAction(currentButton, type(of: self).PHOTO_ACTION_PRESSED, UIControlEvents.touchUpInside))
+        XCTAssertTrue(buttonShouldHaveAction(currentButton, ViewControllerButtonOptions.photoButtonAction, UIControlEvents.touchUpInside))
     }
     
     func testBtnShareActionShouldBeShareButtonPressed() {
@@ -147,7 +129,40 @@ class Swift_Photo_AppTests: XCTestCase {
         XCTAssertTrue(currentButton.action == #selector(ViewController.shareButtonPressed(_:)))
     }
     
+    // Moved this back to Tests Target due to solution found here: https://github.com/Quick/Quick/issues/415#issuecomment-154757318
+    // for the following error:
+    /*
+     Undefined symbols for architecture x86_64:
+     "type metadata accessor for Swift_Photo_App.ViewController", referenced from:
+     type metadata accessor for Swift_Photo_App.ViewController! in Swift_Photo_AppUITests.o
+     ld: symbol(s) not found for architecture x86_64
+     clang: error: linker command failed with exit code 1 (use -v to see invocation)
+     */
     func testBtnResetShouldRestoreMainImageViewState() {
+        let mainImageView = self.sut.mainImageView!
+        let url = URL(string: ViewControllerTestOptions.url.rawValue)!
+        
+        let loadImageInBackgroundExpectation = expectation(description: "Wait for UIImageView.loadImageInBackground to complete")
+        
+        mainImageView.loadImageInBackground(url: url) { [weak self] (success, image) in
+            if success {
+                self!.sut.imageCache.setObject(image!, forKey: url as AnyObject)
+                mainImageView.image = image!
+                self!.sut.mainPhotoURL = url
+            } else {
+                XCTFail("Was not able to download image from source.")
+            }
+            loadImageInBackgroundExpectation.fulfill()
+        }
+        
+        let timeout: TimeInterval = 5
+        
+        waitForExpectations(timeout: timeout) { error in
+            if error != nil {
+                XCTFail("Expectation `loadImageInBackgroundExpectation` failed with error: \(error)")
+            }
+        }
+        
         guard let mainImage = self.sut.mainImageView.image else {
             XCTFail("Main Image has not been set.")
             return
@@ -160,20 +175,30 @@ class Swift_Photo_AppTests: XCTestCase {
         XCTAssertTrue(mainImage.isEqual(mainImageAfterAction))
     }
     
-    
     // Helper Functions
-    
-    func buttonShouldHaveImage(_ currentImage: UIImage, _ image: String) -> Bool {
-        let shouldBeImage = UIImage(named: image)
+    func buttonShouldHaveImage(_ currentImage: UIImage, _ image: ViewControllerButtonOptions) -> Bool {
+        let shouldBeImage = UIImage(named: image.rawValue)
         
         return currentImage.isEqual(shouldBeImage)
     }
     
-    func buttonShouldHaveAction(_ button: UIButton, _ action: String, _ event: UIControlEvents) -> Bool {
+    func buttonShouldHaveAction(_ button: UIButton, _ action: ViewControllerButtonOptions, _ event: UIControlEvents) -> Bool {
         guard let actions = button.actions(forTarget: self.sut, forControlEvent: UIControlEvents.touchUpInside) else {
             return false
         }
         
-        return actions.contains(action)
+        return actions.contains(action.rawValue)
     }
+}
+
+enum ViewControllerButtonOptions: String {
+    case photoButtonAction = "photoActionPressed:"
+    case resetImage = "icon_rotate"
+    case cropImage = "icon_crop"
+    case blurImage = "icon_blur"
+    case constrastImage = "icon_constrast"
+}
+
+enum ViewControllerTestOptions: String {
+    case url = "https://farm1.staticflickr.com/288/19317057739_99ef1262ca_b.jpg"
 }
