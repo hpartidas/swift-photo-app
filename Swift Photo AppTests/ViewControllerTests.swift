@@ -47,27 +47,27 @@ class ViewControllerTests: XCTestCase {
     
     func testBtnResetShouldBeConnected() {
         // then
-        XCTAssertNotNil(self.sut.btnReset)
+        XCTAssertNotNil(self.sut.resetButton)
     }
     
     func testBtnCropShouldBeConnected() {
         // then
-        XCTAssertNotNil(self.sut.btnCrop)
+        XCTAssertNotNil(self.sut.cropButton)
     }
     
     func testBtnBlurShouldBeConnected() {
         // then
-        XCTAssertNotNil(self.sut.btnBlur)
+        XCTAssertNotNil(self.sut.blurButton)
     }
     
     func testBtnContrastShouldBeConnected() {
         // then
-        XCTAssertNotNil(self.sut.btnContrast)
+        XCTAssertNotNil(self.sut.contrastButton)
     }
     
     func testBtnShareShouldBeConnected() {
         // then
-        XCTAssertNotNil(self.sut.btnShare)
+        XCTAssertNotNil(self.sut.shareButton)
     }
     
     func testNotificationLabelShouldBeConnected() {
@@ -80,51 +80,51 @@ class ViewControllerTests: XCTestCase {
     }
     
     func testBtnResetShouldHaveRotateImageAssigned() {
-        let currentImage = self.sut.btnReset.currentImage!
+        let currentImage = self.sut.resetButton.currentImage!
         
         XCTAssertTrue(buttonShouldHaveImage(currentImage, ViewControllerButtonOptions.resetImage))
     }
     
     func testBtnCropHasShouldHaveCropImageAssigned() {
-        let currentImage = self.sut.btnCrop.currentImage!
+        let currentImage = self.sut.cropButton.currentImage!
         
         XCTAssertTrue(buttonShouldHaveImage(currentImage, ViewControllerButtonOptions.cropImage))
     }
     
     func testBtnBlurShouldHaveBlurImageAssigned() {
-        let currentImage = self.sut.btnBlur.currentImage!
+        let currentImage = self.sut.blurButton.currentImage!
         
         XCTAssertTrue(buttonShouldHaveImage(currentImage, ViewControllerButtonOptions.blurImage))
     }
     
     func testBtnContrastShouldHaveContrastImageAssigned() {
-        let currentImage = self.sut.btnContrast.currentImage!
+        let currentImage = self.sut.contrastButton.currentImage!
         
         XCTAssertTrue(buttonShouldHaveImage(currentImage, ViewControllerButtonOptions.constrastImage))
     }
     
     func testBtnResetActionShouldBePhotoActionPressed() {
-        let currentButton = self.sut.btnReset!
+        let currentButton = self.sut.resetButton!
         XCTAssertTrue(buttonShouldHaveAction(currentButton, ViewControllerButtonOptions.photoButtonAction, UIControlEvents.touchUpInside))
     }
     
     func testBtnCropActionShouldBePhotoActionPressed() {
-        let currentButton = self.sut.btnCrop!
+        let currentButton = self.sut.cropButton!
         XCTAssertTrue(buttonShouldHaveAction(currentButton, ViewControllerButtonOptions.photoButtonAction, UIControlEvents.touchUpInside))
     }
     
     func testBtnBlurActionShouldBePhotoActionPressed() {
-        let currentButton = self.sut.btnBlur!
+        let currentButton = self.sut.blurButton!
         XCTAssertTrue(buttonShouldHaveAction(currentButton, ViewControllerButtonOptions.photoButtonAction, UIControlEvents.touchUpInside))
     }
     
     func testBtnContrastActionShouldBePhotoActionPressed() {
-        let currentButton = self.sut.btnContrast!
+        let currentButton = self.sut.contrastButton!
         XCTAssertTrue(buttonShouldHaveAction(currentButton, ViewControllerButtonOptions.photoButtonAction, UIControlEvents.touchUpInside))
     }
     
     func testBtnShareActionShouldBeShareButtonPressed() {
-        let currentButton = self.sut.btnShare!
+        let currentButton = self.sut.shareButton!
 
         XCTAssertTrue(currentButton.action == #selector(ViewController.shareButtonPressed(_:)))
     }
@@ -139,25 +139,9 @@ class ViewControllerTests: XCTestCase {
      clang: error: linker command failed with exit code 1 (use -v to see invocation)
      */
     func testBtnResetShouldRestoreMainImageViewState() {
-        let mainImageView = self.sut.mainImageView!
-        let url = URL(string: ViewControllerTestOptions.url.rawValue)!
+        loadMainImageViewImage()
         
-        let loadImageInBackgroundExpectation = expectation(description: "Wait for UIImageView.loadImageInBackground to complete")
-        
-        mainImageView.loadImageInBackground(url: url) { [weak self] (success, image) in
-            if success {
-                self!.sut.imageCache.setObject(image!, forKey: url as AnyObject)
-                mainImageView.image = image!
-                self!.sut.mainPhotoURL = url
-            } else {
-                XCTFail("Was not able to download image from source.")
-            }
-            loadImageInBackgroundExpectation.fulfill()
-        }
-        
-        let timeout: TimeInterval = 5
-        
-        waitForExpectations(timeout: timeout) { error in
+        waitForExpectations(timeout: TimeInterval(ViewControllerTestOptions.expectationTimeout.rawValue)!) { error in
             if error != nil {
                 XCTFail("Expectation `loadImageInBackgroundExpectation` failed with error: \(error)")
             }
@@ -168,11 +152,25 @@ class ViewControllerTests: XCTestCase {
             return
         }
         
-        self.sut.photoActionPressed(self.sut.btnReset)
+        self.sut.photoActionPressed(self.sut.resetButton)
         
         let mainImageAfterAction = self.sut.mainImageView.image!
         
         XCTAssertTrue(mainImage.isEqual(mainImageAfterAction))
+    }
+    
+    func testBtnBlurGaussianBlurToMainImageViewPerformance() {
+        loadMainImageViewImage()
+        
+        waitForExpectations(timeout: TimeInterval(ViewControllerTestOptions.expectationTimeout.rawValue)!) { error in
+            if error != nil {
+                XCTFail("Expectation `loadImageInBackgroundExpectation` failed with error: \(error)")
+            }
+        }
+        
+        measure {
+            self.sut.photoActionPressed(self.sut.blurButton)
+        }
     }
     
     // Helper Functions
@@ -189,6 +187,24 @@ class ViewControllerTests: XCTestCase {
         
         return actions.contains(action.rawValue)
     }
+    
+    func loadMainImageViewImage() {
+        let mainImageView = self.sut.mainImageView!
+        let url = URL(string: ViewControllerTestOptions.url.rawValue)!
+        
+        let loadImageInBackgroundExpectation = expectation(description: "Wait for UIImageView.loadImageInBackground to complete")
+        
+        mainImageView.loadImageInBackground(url: url) { [weak self] (success, image) in
+            if success {
+                self!.sut.imageCache.setObject(image!, forKey: url as AnyObject)
+                mainImageView.image = image!
+                self!.sut.mainPhotoURL = url
+            } else {
+                XCTFail("Was not able to download image from source.")
+            }
+            loadImageInBackgroundExpectation.fulfill()
+        }
+    }
 }
 
 enum ViewControllerButtonOptions: String {
@@ -201,4 +217,5 @@ enum ViewControllerButtonOptions: String {
 
 enum ViewControllerTestOptions: String {
     case url = "https://farm1.staticflickr.com/288/19317057739_99ef1262ca_b.jpg"
+    case expectationTimeout = "5"
 }

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1006BA8EF42F0EAAD7A25A04 /* Pods_Swift_Photo_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91B18A04E65D0C8741CC47CB /* Pods_Swift_Photo_AppTests.framework */; };
 		4CB526B0EE05049222AD346D /* Pods_Swift_Photo_App_Swift_Photo_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 472396CA88FB7837BC136650 /* Pods_Swift_Photo_App_Swift_Photo_AppTests.framework */; };
 		5C9664A59CB513BAECFEFFC5 /* Pods_Swift_Photo_App_Swift_Photo_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B87BAB612A13BA6217D16DB /* Pods_Swift_Photo_App_Swift_Photo_AppUITests.framework */; };
 		9D0954001E52327E006A42FF /* FlickrKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D0953F91E52327E006A42FF /* FlickrKit.framework */; };
@@ -23,6 +22,7 @@
 		9D2FD88D1E4E3F4500547046 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2FD88C1E4E3F4500547046 /* ViewControllerTests.swift */; };
 		9D597C611E524BD60035488E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D597C601E524BD60035488E /* AppDelegate.swift */; };
 		9D625FFF1E5F866600B493CF /* Swift_Photo_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D625FFE1E5F866600B493CF /* Swift_Photo_AppUITests.swift */; };
+		9DC1EB5C1E67690F007031F4 /* Pods_Swift_Photo_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC1EB5B1E67690F007031F4 /* Pods_Swift_Photo_App.framework */; };
 		9DE12AE81E60B8CD00A8E92A /* UIImageViewExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE12AE71E60B8CD00A8E92A /* UIImageViewExtensionTest.swift */; };
 		B89297F348DB71F40CD0694B /* Pods_Swift_Photo_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD695F3B01588FE1CE6E2AF /* Pods_Swift_Photo_App.framework */; };
 /* End PBXBuildFile section */
@@ -82,6 +82,7 @@
 		9D625FFE1E5F866600B493CF /* Swift_Photo_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_Photo_AppUITests.swift; sourceTree = "<group>"; };
 		9D6260001E5F866600B493CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9D7E53D81E5F718A00468D99 /* Pods_Swift_Photo_App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Swift_Photo_App.framework; path = "../../../../Library/Developer/Xcode/DerivedData/Swift_Photo_App-gjjpijroglxicchbmqpiwnkbnuhm/Build/Products/Debug-iphonesimulator/Pods_Swift_Photo_App.framework"; sourceTree = "<group>"; };
+		9DC1EB5B1E67690F007031F4 /* Pods_Swift_Photo_App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_Swift_Photo_App.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/Swift_Photo_App-dnswambqoyppewgityhrgvhkpqdo/Build/Products/Debug-iphonesimulator/Pods_Swift_Photo_App.framework"; sourceTree = "<group>"; };
 		9DDB9F221E524C8800040581 /* Swift_Photo_App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swift_Photo_App-Bridging-Header.h"; sourceTree = "<group>"; };
 		9DE12AE71E60B8CD00A8E92A /* UIImageViewExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensionTest.swift; sourceTree = "<group>"; };
 		A26FFB578A3F5FD0D8324CEC /* Pods_Swift_Photo_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift_Photo_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,7 +107,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1006BA8EF42F0EAAD7A25A04 /* Pods_Swift_Photo_AppTests.framework in Frameworks */,
 				4CB526B0EE05049222AD346D /* Pods_Swift_Photo_App_Swift_Photo_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -115,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DC1EB5C1E67690F007031F4 /* Pods_Swift_Photo_App.framework in Frameworks */,
 				5C9664A59CB513BAECFEFFC5 /* Pods_Swift_Photo_App_Swift_Photo_AppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,6 +217,7 @@
 		CEA0B6A2F9AA451B8D4463A2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9DC1EB5B1E67690F007031F4 /* Pods_Swift_Photo_App.framework */,
 				9D7E53D81E5F718A00468D99 /* Pods_Swift_Photo_App.framework */,
 				9D0953F91E52327E006A42FF /* FlickrKit.framework */,
 				9D0953FA1E52327E006A42FF /* MBProgressHUD.framework */,

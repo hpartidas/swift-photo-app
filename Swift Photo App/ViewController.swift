@@ -19,11 +19,11 @@ class ViewController: UIViewController, UISearchBarDelegate, SwipeViewDelegate, 
     @IBOutlet weak var toolsView: UIStackView!
     
     // Buttons
-    @IBOutlet weak var btnReset: UIButton!
-    @IBOutlet weak var btnCrop: UIButton!
-    @IBOutlet weak var btnBlur: UIButton!
-    @IBOutlet weak var btnContrast: UIButton!
-    @IBOutlet weak var btnShare: UIBarButtonItem!
+    @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet weak var cropButton: UIButton!
+    @IBOutlet weak var blurButton: UIButton!
+    @IBOutlet weak var contrastButton: UIButton!
+    @IBOutlet weak var shareButton: UIBarButtonItem!
     
     // Labels
     @IBOutlet weak var notificationLabel: UILabel!
@@ -111,18 +111,18 @@ class ViewController: UIViewController, UISearchBarDelegate, SwipeViewDelegate, 
     }
     
     @IBAction func photoActionPressed(_ sender: UIButton) {
-        if sender == btnReset {
+        if sender == resetButton {
             if let cachedImage = imageCache.object(forKey: mainPhotoURL! as AnyObject) as? UIImage {
                 mainImageView.image = cachedImage
             }
         }
-        else if sender == btnCrop {
+        else if sender == cropButton {
             mainImageView.image = mainImageView.image?.crop(to: mainImageView.frame.size)
         }
-        else if sender == btnBlur {
+        else if sender == blurButton {
             mainImageView.image = mainImageView.image?.gaussianBlur(withBias: 10)
         }
-        else if sender == btnContrast {
+        else if sender == contrastButton {
             mainImageView.image = mainImageView.image?.contrastAdjustment(withValue: 50.0)
         }
     }
@@ -135,11 +135,11 @@ class ViewController: UIViewController, UISearchBarDelegate, SwipeViewDelegate, 
     }
     
     func toggleInterfaceButtons(imageAvailable: Bool) {
-        btnReset.isEnabled = imageAvailable
-        btnCrop.isEnabled = imageAvailable
-        btnBlur.isEnabled = imageAvailable
-        btnContrast.isEnabled = imageAvailable
-        btnShare.isEnabled = imageAvailable
+        resetButton.isEnabled = imageAvailable
+        cropButton.isEnabled = imageAvailable
+        blurButton.isEnabled = imageAvailable
+        contrastButton.isEnabled = imageAvailable
+        shareButton.isEnabled = imageAvailable
     }
     
     func parsePhotos(response: Dictionary<String, Any>) {
