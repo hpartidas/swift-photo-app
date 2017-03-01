@@ -76,7 +76,7 @@ class Swift_Photo_AppUITests: XCTestCase {
             return
         }
     
-        self.sut.photoActionPressed(self.sut.btnReset)
+        self.sut.photoActionPressed(self.sut.resetButton)
     
         let mainImageAfterAction = self.sut.mainImageView.image!
     

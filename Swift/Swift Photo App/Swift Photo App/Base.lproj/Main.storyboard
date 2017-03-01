@@ -34,28 +34,28 @@
                                                 <rect key="frame" x="0.0" y="30" width="91" height="30"/>
                                                 <state key="normal" image="icon_rotate"/>
                                                 <connections>
-                                                    <action selector="photoActionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nPG-uE-Gry"/>
+                                                    <action selector="photoActionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0JF-iF-1e8"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5P9-kx-PRY" userLabel="btnCrop">
                                                 <rect key="frame" x="91" y="30" width="109" height="30"/>
                                                 <state key="normal" image="icon_crop"/>
                                                 <connections>
-                                                    <action selector="photoActionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bac-ew-LKx"/>
+                                                    <action selector="photoActionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kd3-y5-mgx"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKG-Qe-1Z3" userLabel="btnBlur">
                                                 <rect key="frame" x="200" y="29" width="70" height="32"/>
                                                 <state key="normal" image="icon_blur"/>
                                                 <connections>
-                                                    <action selector="photoActionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tlf-VO-Nav"/>
+                                                    <action selector="photoActionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u3i-95-cwq"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9y-Hx-lJi" userLabel="btnContrast">
                                                 <rect key="frame" x="270" y="30" width="105" height="30"/>
                                                 <state key="normal" image="icon_constrast"/>
                                                 <connections>
-                                                    <action selector="photoActionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Sq-sM-3fi"/>
+                                                    <action selector="photoActionPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cH7-yb-2rR"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -112,18 +112,18 @@
                     <navigationItem key="navigationItem" id="MDD-Y3-Y3b">
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="a2k-pF-1CI">
                             <connections>
-                                <action selector="shareButtonPressed:" destination="BYZ-38-t0r" id="qhd-0H-mUO"/>
+                                <action selector="shareButtonPressed:" destination="BYZ-38-t0r" id="2JN-Qp-VS1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="btnBlur" destination="dKG-Qe-1Z3" id="YKg-0a-ev6"/>
-                        <outlet property="btnContrast" destination="n9y-Hx-lJi" id="E7Z-i0-y2F"/>
-                        <outlet property="btnCrop" destination="5P9-kx-PRY" id="wvT-JY-edq"/>
-                        <outlet property="btnReset" destination="fIg-eF-mpN" id="39R-zz-jQy"/>
-                        <outlet property="btnShare" destination="a2k-pF-1CI" id="t42-Fl-Dge"/>
+                        <outlet property="blurButton" destination="dKG-Qe-1Z3" id="dIG-6l-SP5"/>
+                        <outlet property="contrastButton" destination="n9y-Hx-lJi" id="hTD-bU-T8t"/>
+                        <outlet property="cropButton" destination="5P9-kx-PRY" id="FjJ-VS-Lkh"/>
                         <outlet property="mainImageView" destination="dBE-ys-Vul" id="DRP-uZ-R5t"/>
                         <outlet property="notificationLabel" destination="67x-Bg-MU6" id="oTw-xy-rYz"/>
+                        <outlet property="resetButton" destination="fIg-eF-mpN" id="tC4-VZ-URs"/>
+                        <outlet property="shareButton" destination="a2k-pF-1CI" id="i37-tN-C0x"/>
                         <outlet property="swipeView" destination="uWE-Uu-Q3e" id="dUe-4A-e6l"/>
                         <outlet property="toolsView" destination="5ud-Af-wgH" id="Imm-uW-XSk"/>
                     </connections>
